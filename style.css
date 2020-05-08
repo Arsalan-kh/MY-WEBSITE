@@ -6,25 +6,28 @@
     font-family: Arial, Helvetica, sans-serif;
 
 }
-body{
-  max-width: auto;
+
+html,body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
 }
-
 /* Top Header */
 
 .topcontainer{
+  align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    background-color: #316DC3; 
+    text-align: center;
     padding-left: 15px;
     padding-right: 15px;
-    padding: 5px;
-    background-color: #316DC3;
-    width: 100%;
-  
-text-align: center;
+    width: auto;
+    padding: 7px;
 }
 
 
@@ -32,9 +35,7 @@ text-align: center;
 
 .fa {
     padding: 10px;
-    font-size: 5px;
-  
-    
+    font-size: 5px;    
     text-decoration: none;
     margin: 5px 2px;
     
@@ -71,6 +72,7 @@ text-align: center;
   }
 
 .socialicons{
+ 
     /* flex: 1.5; */
 }
 
@@ -78,6 +80,9 @@ text-align: center;
     font-weight: bold;
     color: white;
     padding: 9px;
+    padding-left: 27px;
+    margin-left: 15px;
+    
     /* flex: 3; */
 }
 
@@ -86,6 +91,8 @@ div.action-button-widget>a{
 background-color: #f7f8fa;
 border: 1.1px solid #427900;
 color: #427900;
+font-size: 12px;
+padding: 10px;
 }
 
 
@@ -93,13 +100,13 @@ color: #427900;
 .logobar{
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: space-around;
     flex-wrap: wrap;
-  margin-top:0;
+    margin-top:0;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.788);
     width: 100%;
-    margin-left: 14px;
+    margin-left: 0;
 }
 /*navigation-bar menu items*/
 
@@ -119,23 +126,15 @@ li {
 
 li a {
   display: block;
-  color: rgb(26, 122, 182);
+ 
   text-align: center;
   padding: 8px 16px;
   text-decoration: none;
 }
 
-#active{
-  background-color: #3498db;
-  border-radius: 20px;
-}
-
 .menu{
-margin: 0;
-padding: 0;
-margin-left: 60px;
-width: 100%;
-  
+position: relative;
+top: 12px;
 }
 
 ul.menu>li>a{
@@ -143,15 +142,28 @@ color: rgb(15, 15, 15);
 text-align: center;
 text-decoration: none;
 display: inline-block;
-
+margin: 3px;
 }
-.hover :hover{
+
+ul.menu>li>a:hover{
   background-color: #3498db;
-  color: #fff;
-  padding: 8px 16px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
   border-radius: 20px;
-}
+  }
 
+
+.nav-bar li a{
+  background-color: #fff;
+
+}
+.menu a.active {
+  background-color: #3498db;
+  border-radius: 20px;
+  color: #fff;
+}
 /*slides-img with meadia query*/
 
 
@@ -239,7 +251,7 @@ p{
 }
 @media (min-width: 992px){
   .col-md-10 {
-      float: left;
+      float: right;
   }
   }
   .col-md-10{
@@ -270,7 +282,7 @@ position: relative;
 
 .parallax{
   width: 100%;
-    height: 100%;
+   
     margin: 0 auto;
     background-size: cover;
     background-attachment: fixed;

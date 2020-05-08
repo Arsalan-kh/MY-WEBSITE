@@ -7,8 +7,11 @@
 
 }
 body{
-  max-width: auto;
-  overflow-x: hidden;
+ padding: 11px;
+padding-top: 0;
+padding-bottom: 0;
+ overflow-x: hidden;
+
 }
 
 /* Top Header */
@@ -129,13 +132,8 @@ li a {
   background-color: #3498db;
   border-radius: 20px;
 }
-
-.menu{
-margin: 0;
-padding: 0;
-margin-left: 60px;
-width: 100%;
-  
+.menu>li{
+  padding: 18px 0;
 }
 
 ul.menu>li>a{
@@ -239,7 +237,7 @@ p{
 }
 @media (min-width: 992px){
   .col-md-10 {
-      float: left;
+      float: right;
   }
   }
   .col-md-10{
